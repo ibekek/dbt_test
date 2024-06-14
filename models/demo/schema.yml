@@ -78,7 +78,7 @@ models:
             description: "struct_id"
             tests:
                 - not_null
-                - more_than_ten
+                - custom_test
           - name: drug_class_id
             description: "drug_class_id"
             tests:
