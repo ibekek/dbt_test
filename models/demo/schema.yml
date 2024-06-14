@@ -1,0 +1,92 @@
+
+version: 2
+
+models:
+    - name: test_1_1
+      description: "First"
+      columns:
+          - name: id
+            description: "ddi_id"
+            tests:
+                - unique
+                - not_null
+          - name: drug_class2
+            description: "Name of Drug Class"
+            tests:
+                - not_null
+          - name: ddi_risk
+            description: " ddi_risk"
+            tests:
+                - not_null
+
+    - name: test_1_2
+      description: "Second"
+      columns:
+          - name: drug_class_id
+            description: "drug_class_id"
+            tests:
+                - unique
+                - not_null
+          - name: ddi_risk
+            description: "ddi_risk"
+            tests:
+                - not_null
+          - name: name
+            description: "Name of Drug Class"
+            tests:
+                - not_null
+
+    - name: test_2_1
+      description: "Third"
+      columns:
+          - name: id
+            description: "id"
+            tests:
+                - unique
+                - not_null
+          - name: meddra_name
+            description: "meddra_name"
+            tests:
+                - not_null
+          - name: struct_id
+            description: "struct_id"
+            tests:
+                - unique
+                - not_null
+                
+    - name: test_2_2
+      description: "Fourth"
+      columns:
+          - name: struct_id
+            description: "struct_id"
+            tests:
+                - unique
+                - not_null
+          - name: meddra_name
+            description: "meddra_name"
+            tests:
+                - not_null
+          - name: name
+            description: "Name of struct"
+            tests:
+                - not_null
+                                
+    - name: test_3
+      description: "Fifth"
+      columns:
+          - name: struct_id
+            description: "struct_id"
+            tests:
+                - not_null
+          - name: drug_class_id
+            description: "drug_class_id"
+            tests:
+                - not_null
+          - name: drug_name
+            description: "drug_name"
+            tests:
+                - not_null
+          - name: struct_name
+            description: "struct_name"
+            tests:
+                - not_null
