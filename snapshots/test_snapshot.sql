@@ -1,11 +1,11 @@
-{% snapshot snapshot_recipe %}
+{% snapshot snapshot_test %}
     {{
         config(
           target_schema='public',
-          unique_key='row_id',
+          unique_key='id',
           strategy='timestamp',
-          updated_at='quantity'
+          updated_at='date'
         )
     }}
-    select * from {{ ref('test_coffee_recipe') }}
+    select * from {{ ref('test_snap') }}
 {% endsnapshot %}
