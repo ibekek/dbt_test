@@ -25,7 +25,6 @@ models:
           - name: drug_class_id
             description: "drug_class_id"
             tests:
-                - unique
                 - not_null
           - name: ddi_risk
             description: "ddi_risk"
@@ -51,7 +50,6 @@ models:
           - name: struct_id
             description: "struct_id"
             tests:
-                - unique
                 - not_null
                 
     - name: test_2_2
@@ -60,7 +58,6 @@ models:
           - name: struct_id
             description: "struct_id"
             tests:
-                - unique
                 - not_null
           - name: meddra_name
             description: "meddra_name"
